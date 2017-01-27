@@ -92,8 +92,8 @@ Pod::Spec.new do |s|
   #s.source_files  = "SRKClasses/*.{h,m}", "*.{swift}"
 
   s.subspec 'Camera' do |sub|
-    sub.preserve_paths  =   'SRKClasses', 'SRKImages'
-    sub.resources     =   'Images/*.png'
+    # sub.preserve_paths  =   'SRKClasses', 'SRKImages'
+    sub.resources     =   'SRKImages/*.png'
     sub.source_files  = 'SRKClasses/*.{h,m}', 'SRKCamera.swift'
   end
 

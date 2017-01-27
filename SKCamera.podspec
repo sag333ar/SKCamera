@@ -90,8 +90,8 @@ Pod::Spec.new do |s|
 
   s.subspec 'Camera' do |sub|
     # sub.preserve_paths  =   'SRKClasses', 'SRKImages'
-    sub.resources     =   'SRKImages/*.png'
-    sub.source_files  = 'SRKClasses/*.{h,m}', 'SRKCamera.swift'
+    sub.resources     =   'Camera/SRKImages/*.png'
+    sub.source_files  = 'Camera/SRKClasses/*.{h,m}', 'Camera/SRKCamera.swift'
   end
 
   #s.exclude_files = "Classes/Exclude"

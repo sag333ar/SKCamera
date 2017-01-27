@@ -88,13 +88,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  #s.resources     = "Images/*.png"
-  #s.source_files  = "SRKClasses/*.{h,m}", "*.{swift}"
-
   s.subspec 'Camera' do |sub|
     # sub.preserve_paths  =   'SRKClasses', 'SRKImages'
-    sub.resources     =   'SRKImages/*.png'
-    sub.source_files  = 'SRKClasses/*.{h,m}', 'SRKCamera.swift'
+    sub.resources     =   '/SRKImages/*.png'
+    sub.source_files  = '/SRKClasses/*.{h,m}', '/SRKCamera.swift'
   end
 
   #s.exclude_files = "Classes/Exclude"
@@ -139,5 +136,5 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-
+  s.frameworks    =   'UIKit', 'Foundation'
 end

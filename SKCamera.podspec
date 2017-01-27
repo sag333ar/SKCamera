@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SKCamera"
-  s.version      = "1.0.3"
+  s.version      = "1.0.1"
   s.summary      = "A custom camera picker controller."
 
   # This description is used to generate tags and improve search results.
@@ -90,8 +90,8 @@ Pod::Spec.new do |s|
 
   s.subspec 'Camera' do |sub|
     # sub.preserve_paths  =   'SRKClasses', 'SRKImages'
-    sub.resources     =   '/SRKImages/*.png'
-    sub.source_files  = '/SRKClasses/*.{h,m}', '/SRKCamera.swift'
+    sub.resources     =   'SRKImages/*.png'
+    sub.source_files  = 'SRKClasses/*.{h,m}', 'SRKCamera.swift'
   end
 
   #s.exclude_files = "Classes/Exclude"

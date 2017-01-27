@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SKCamera"
-  s.version      = "1.0.2"
-  s.summary      = "A custom camera picker controller. "
+  s.version      = "1.0.1"
+  s.summary      = "A custom camera picker controller."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -88,8 +88,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.resources     =   'SRKImages/*.png'
-  s.source_files  = 'SRKClasses/*.{h,m}', '*.{swift}'
+  s.resources     = "SRKImages/*.{png}"
+  s.source_files  = "SRKClasses/*.{h,m}", "*.{swift}"
 
   #s.exclude_files = "Classes/Exclude"
 

@@ -88,8 +88,14 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.resources     = "SRKImages/*.{png}"
+  s.resources     = "Images/*.png"
   s.source_files  = "SRKClasses/*.{h,m}", "*.{swift}"
+
+  s.subspec 'Camera' do |sub|
+    # sub.preserve_paths  =   'SRKClasses', 'SRKImages'
+    sub.resources     =   'Images/*.png'
+    sub.source_files  = 'SRKClasses/*.{h,m}', 'SRKCamera.swift'
+  end
 
   #s.exclude_files = "Classes/Exclude"
 
